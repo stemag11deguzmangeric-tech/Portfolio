@@ -1363,10 +1363,13 @@
   });
 
   // ─── CV DOWNLOAD ───
-  function downloadCV(e) {
-    e.preventDefault();
-    alert('Resume/CV download coming soon!');
-  }
+ function downloadCV(e) {
+  e.preventDefault();
+  const a = document.createElement('a');
+  a.href = 'assets/Gericherald_DeGuzman_CV.pdf';
+  a.download = 'Gericherald_DeGuzman_CV.pdf';
+  a.click();
+}
 </script>
 </body>
 </html>
